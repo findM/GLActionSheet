@@ -20,6 +20,17 @@
 2015-12-19 23:05:05.294 demo[1242:331980] 2
 ```
 
+如果不显示标题， title 设置为 nil即可
+```
+[GLActionSheet showWithDataSource:@[@"我是第一条",@"我2我自豪",@"老3怎么了",@"怒射楼上一脸",@"喔喔喔"]
+                                title:nil
+                          selectIndex:3
+                        completeBlock:^(NSInteger index) {
+                            NSLog(@"%ld",(long)index);
+                        }];
+```
+![不显示标题](http://7u2lyw.com1.z0.glb.clouddn.com/blog不显示标题.png)
+
 ###修改
 ```
 #define kNormalColor RGB(0x54,0x54,0x54)   //正常颜色
