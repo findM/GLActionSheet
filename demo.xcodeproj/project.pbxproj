@@ -13,6 +13,7 @@
 		9541563A1C25A16B007D6A64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954156381C25A16B007D6A64 /* Main.storyboard */; };
 		9541563C1C25A16B007D6A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9541563B1C25A16B007D6A64 /* Assets.xcassets */; };
 		9541563F1C25A16B007D6A64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9541563D1C25A16B007D6A64 /* LaunchScreen.storyboard */; };
+		954156491C25A18B007D6A64 /* GLActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 954156481C25A18B007D6A64 /* GLActionSheet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		9541563B1C25A16B007D6A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9541563E1C25A16B007D6A64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		954156401C25A16B007D6A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		954156471C25A18B007D6A64 /* GLActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLActionSheet.h; sourceTree = "<group>"; };
+		954156481C25A18B007D6A64 /* GLActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLActionSheet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		9541562E1C25A16B007D6A64 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				954156461C25A18B007D6A64 /* GLActionSheet */,
 				954156321C25A16B007D6A64 /* AppDelegate.h */,
 				954156331C25A16B007D6A64 /* AppDelegate.m */,
 				954156351C25A16B007D6A64 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				954156301C25A16B007D6A64 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		954156461C25A18B007D6A64 /* GLActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				954156471C25A18B007D6A64 /* GLActionSheet.h */,
+				954156481C25A18B007D6A64 /* GLActionSheet.m */,
+			);
+			path = GLActionSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				954156491C25A18B007D6A64 /* GLActionSheet.m in Sources */,
 				954156371C25A16B007D6A64 /* ViewController.m in Sources */,
 				954156341C25A16B007D6A64 /* AppDelegate.m in Sources */,
 				954156311C25A16B007D6A64 /* main.m in Sources */,

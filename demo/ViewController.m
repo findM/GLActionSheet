@@ -8,7 +8,10 @@
 
 #import "ViewController.h"
 
+#import "GLActionSheet.h"
+
 @interface ViewController ()
+- (IBAction)openAction:(id)sender;
 
 @end
 
@@ -16,12 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)openAction:(id)sender {
+    [GLActionSheet showWithDataSource:@[@"我是第一条",@"我2我自豪",@"老3怎么了",@"怒射楼上一脸",@"喔喔喔"]
+                                title:@"逗比集中营"
+                          selectIndex:3
+                        completeBlock:^(NSInteger index) {
+                            NSLog(@"%ld",(long)index);
+                        }];
+}
 @end
